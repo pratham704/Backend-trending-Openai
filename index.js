@@ -44,7 +44,7 @@ app.post('/gettrending', async(req, res) => {
 
 
 
-    const results = await abc.find({}).sort({ updatedAt: -1 });
+    const results = await abc.find({}).sort({ updatedAt: 1 });
     const response = results.map((doc) => {
         return {
             blogs: doc.blogs,
