@@ -70,12 +70,7 @@ app.post('/del', async(req, res) => {
 
 });
 
-app.use("/", (req, res) => {
 
-
-    res.json("enjoy")
-
-})
 
 if (process.env.API_Port) {
 
